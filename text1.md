@@ -26,8 +26,17 @@
 
 ### 快速创建方法
 ```
-[UIColor colorWithWhite:(CGFloat) alpha:(CGFloat)]；
-[UIColor colorWithRed:(CGFloat) green:(CGFloat) blue:(CGFloat) alpha:(CGFloat)]；
+    [UIColor colorWithWhite:CGFloat alpha:CGFloat];
+    [UIColor colorWithRed:CGFloat green:CGFloat blue:CGFloat alpha:CGFloat];
+    [UIColor colorWithHue:(色调) saturation:(饱和度) brightness:(亮度) alpha:(透明度)];
 ```
-- **redColor 红色   1.0 , 0.0 , 0.0 RGB  greenColor 绿色   0.0 , 1.0 , 0.0 RGB  blueColor 蓝色   0.0 , 0.0 , 1.0 RGB  cyanColor 青色(红色与绿色之间)   0.0 , 1.0 , 1.0 RGB  yellowColor 黄色   1.0 , 1.0 , 0.0 RGB  magentaColor 洋红色(红色与蓝色之间)   1.0 , 0.0 , 1.0 RGB  orangeColor 橙色   1.0 , 0.5 , 0.0 RGB  purpleColor 紫色   0.5 , 0.0 , 0.5 RGB  brownColor 棕色   0.6 , 0.4 , 0.2 RGB快速创建方法：
+- **redColor** 红色   1.0 , 0.0 , 0.0 RGB  
+- **greenColor** 绿色   0.0 , 1.0 , 0.0 RGB  
+- **blueColor** 蓝色   0.0 , 0.0 , 1.0 RGB  
+- **cyanColor** 青色(红色与绿色之间)   0.0 , 1.0 , 1.0 RGB 
+- **yellowColor** 黄色   1.0 , 1.0 , 0.0 RGB  
+- **magentaColor** 洋红色(红色与蓝色之间)   1.0 , 0.0 , 1.0 RGB 
+- **orangeColor** 橙色   1.0 , 0.5 , 0.0 RGB  
+- **purpleColor** 紫色   0.5 , 0.0 , 0.5 RGB  
+- **brownColor** 棕色   0.6 , 0.4 , 0.2 RGB
 ```
