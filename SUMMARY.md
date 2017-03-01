@@ -2,15 +2,15 @@
 
 * [Markdown](markdown.md)
 * [UI界面](README.md)
-    * [UIColor](text1.md)
-    * [UILabel](text2.md)
+    * [UIColor](uicolor.md)
+    * [UILabel](uilabel.md)
     * [UIButton](uibutton.md)
     * [UIImageView](uiimageview.md)
-    * UITextField
-    * UISlider
+    * [UITextField](uitextfield.md)
+    * [UISlider](uislider.md)
     * [UIProgressView](uiprogressview.md)
-    * UISwitch
-    * UISegmentedControl
+    * [UISwitch](uiswitch.md)
+    * [UISegmentedControl](uisegmentedcontrol.md)
     * UIToolbar
     * UITextView
     * UISearchBar
