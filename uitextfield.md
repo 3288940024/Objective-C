@@ -37,12 +37,12 @@ UITextBorderStyleBezel
     textfield.font = [UIFont fontWithName:@"" size:20];
 ```
 
-- #####textColor————字体颜色
+- ##### textColor————字体颜色
 ```
     textfield.textColor = [UIColor redColor];
 ```
 
-- #####clearButtonMode————输入框中的叉；
+- ##### clearButtonMode————输入框中的叉；
 ```
     text.clearButtonMode = UITextFieldViewModeAlways;
     text.rightViewMode = UITextFieldViewModeAlways;
@@ -66,12 +66,12 @@ UITextBorderStyleBezel
     textfield.text = @"";
 ```
 
-- #####每输入一个字符就变成点 用于密码输入
+- ##### 每输入一个字符就变成点 用于密码输入
 ```
     textfield.secureTextEntry = YES;
 ```
 
-- #####autocorrectionType————是否纠错
+- ##### autocorrectionType————是否纠错
 ```
     textfield.autocorrectionType = UITextAutocorrectionTypeDefault;
 ```
@@ -79,12 +79,12 @@ UITextBorderStyleBezel
 >
     UITextAutocorrectionTypeYes   自动纠错
 
-- #####clearsOnBeginEditing————编辑清空
+- ##### clearsOnBeginEditing————编辑清空
 ```
     textfield.clearsOnBeginEditing = YES;
 ```
 
-- #####textAlignment————内容对齐方式
+- ##### textAlignment————内容对齐方式
 ```
     textfield.textAlignment = UITextAlignmentLeft;
 ```
@@ -92,7 +92,7 @@ UITextBorderStyleBezel
 > 
 UITextAlignmentCenter   中对齐
 
-- #####contentVerticalAlignment————内容垂直对齐方式
+- ##### contentVerticalAlignment————内容垂直对齐方式
 ```
     textfield.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 ```
