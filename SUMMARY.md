@@ -2,7 +2,6 @@
 
 * [Markdown](markdown.md)
 * [UI界面](README.md)
-    * [UIColor](uicolor.md)
     * [UILabel](uilabel.md)
     * [UIButton](uibutton.md)
     * [UIImageView](uiimageview.md)
@@ -18,5 +17,9 @@
     * [UIPageControl](uipagecontrol.md)
     * [UISearchBar](uisearchbar.md)
     * [UIPickView](uipickview.md)
+    * [UIActivityIndicatorView](uiactivityindicatorview.md)
+* [UI拓展](ui拓展.md)
+    * [UIColor](uicolor.md)
+    * [KeyBoard](keyboard.md)
 * [The database](database.md)
 
