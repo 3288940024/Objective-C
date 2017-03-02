@@ -35,15 +35,14 @@ http://blog.csdn.net/l_ch_g/article/details/8256485
 ```
     label.textAlignment = NSTextAlignmentCenter;   //居中
 ```
-> 
-NSTextAlignmentLeft   居左
-> 
-NSTextAlignmentRight   居右
 
 - #####numberOfLines————标签最多显示行数
 ```
     label.numberOfLines = 0;   //自动换行
 ```
+>     NSTextAlignmentLeft 居左
+>
+    NSTextAlignmentRight 居右
 
 - ##### ShadowColor————设置阴影颜色
 ```
@@ -96,6 +95,7 @@ label.lineBreakMode = NSLineBreakByCharWrapping; //以字符为显示单位，�
     label.adjustsFontSizeToFitWidth = YES;
 ```
 
+### 扩展
 - ##### \n————换行符
 ```
     label.text = @"请\n竖\n直\n方\n向\n排\n列";
