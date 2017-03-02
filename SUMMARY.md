@@ -18,6 +18,8 @@
     * [UISearchBar](uisearchbar.md)
     * [UIPickView](uipickview.md)
     * [UIActivityIndicatorView](uiactivityindicatorview.md)
+    * [UITableView](uitableview.md)
+    * [UICollectionView](uicollectionview.md)
 * [UI拓展](ui拓展.md)
     * [UIColor](uicolor.md)
     * [KeyBoard](keyboard.md)
