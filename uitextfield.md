@@ -128,3 +128,44 @@ UITextAlignmentCenter   中对齐
     UITextAutocapitalizationTypeSentences   句子的首字母大写
 > 
    UITextAutocapitalizationTypeAllCharacters   所有字母都大写
+
+### 代理方法
+- ##### 返回一个BOOl值，指定是否循序文本字段开始编辑，返回NO时不能唤起键盘进行编辑
+```
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    return YES;
+}
+```
+
+- ##### 开始编辑时触发,文本字段将成为first responder
+```
+-(void)textFieldDidBeginEditing:(UITextField *)textField{}  
+```
+
+- ##### 返回BOOL值，指定是否允许文本字段结束编辑，当编辑结束，文本字段会让出first responder。要想在用户结束编辑时阻止文本字段消失，可以返回NO。这对一些文本字段必须始终保持活跃状态的程序很有用，比如即时消息。
+```
+-(BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    return NO;   //一直处于编辑阶段
+}
+```
+
+- ##### 当用户自动更正功能，把输入的文字修改为推荐的文字时，就会调用这个方法。这对于加入撤销选项的应用程序特别有用。可以跟踪字段内所做的最后一次修改，也可以对所有编辑做日志记录，用作审计用途。要防止文字被改变可以返回NO。这个方法的参数中有个NSRange对象，指明了被改变文字的位置，建议修改的文字也在其中
+```
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    return YES;
+}
+```  
+
+- ##### 返回一个BOOL值指明是否允许根据用户请求清除内容。可以设置在特定条件下才允许清除内容
+```
+-(BOOL)textFieldShouldClear:(UITextField *)textField{
+    return YES;   //返回YES,输入内容后点击右边的清除按钮可以清除,返回NO,则不可以
+}
+```
+ 
+- ##### 返回一个BOOL值，指明是否允许在按下回车键时结束编辑。如果允许要调用resignFirstResponder方法，这会导致结束编辑，而键盘会被收起
+```
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    return YES;
+}
+``` 
