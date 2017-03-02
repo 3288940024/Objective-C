@@ -13,10 +13,10 @@
     * [UISegmentedControl](uisegmentedcontrol.md)
     * [UIToolbar](uitoolbar.md)
     * [UITextView](uitextview.md)
-    * [UISearchBar](uisearchbar.md)
+    * [UIStepper](uistepper.md)
     * [UIScrollView](uiscrollview.md)
     * [UIPageControl](uipagecontrol.md)
+    * [UISearchBar](uisearchbar.md)
     * [UIPickView](uipickview.md)
-    * [UIStepper](uistepper.md)
-* [First Chapter](chapter1.md)
+* [The database](database.md)
 
