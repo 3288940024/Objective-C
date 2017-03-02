@@ -11,7 +11,7 @@
     * [UIProgressView](uiprogressview.md)
     * [UISwitch](uiswitch.md)
     * [UISegmentedControl](uisegmentedcontrol.md)
-    * UIToolbar
+    * [UIToolbar](uitoolbar.md)
     * UITextView
     * UISearchBar
     * UIScrollView
