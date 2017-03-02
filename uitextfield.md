@@ -169,3 +169,33 @@ UITextAlignmentCenter   中对齐
     return YES;
 }
 ``` 
+
+***
+### 拓展
+- #####限定特定字符输入
+```
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    //可以在文件顶部定义:
+    //#define NUMBERD @"0123456789n"(这个代表可以输入数字和换行，这个n，如果不写，Done按键将不会触发)
+    NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:NUMBERD] invertedSet];   //inverted方法是去反字符，把所有的除了NUMBERS里的字符都找出来(包含去空格功能)
+    NSString *filtered = [string componentsSeparatedByString:NUMBERD];   //按cs分离出数组,数组按@""分离出字符串
+    //componentsJoinedByString用于根据一个字符串来将数组连接成一个新的字符串
+    BOOL canChange = [string isEqualToString:filtered];
+    return canChange;   //这样写了后,输入非数字时不能输入
+}
+```
+
+- #####限制只能输入一定长度的字符
+```
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    if ([string isEqualToString:@""]) /*按回车可以改变(这里写什么就只能输入什么)*/ {
+        return YES;   //string就是此时输入的那个字符 textField就是此时正在输入的那个输入框 返回YES就是可以改变输入框的值 NO相反
+        NSString *toBeString = [textField.text stringByReplacingCharactersInRange:range withString:string];   //得到输入框的内容
+        if (self.myTextField == textField) /*判断是否是我们要限定的那个输入框*/{
+            if ([toBeString length] > 20) {
+                textField.text = [toBeString substringFromIndex:20];   //最多只能输入20个字符
+            }
+        }
+    }
+}
+```
