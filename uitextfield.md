@@ -73,5 +73,39 @@ UITextBorderStyleBezel
 ```
 >     UITextAutocorrectionTypeNo    不自动纠错
     UITextAutocorrectionTypeYes   自动纠错
+
 - #####clearsOnBeginEditing————编辑清空
-text.clearsOnBeginEditing = YES；
+```
+    textfield.clearsOnBeginEditing = YES;
+```
+
+- #####textAlignment————内容对齐方式
+```
+    textfield.textAlignment = UITextAlignmentLeft;
+```
+>     UITextAlignmentRight   右对齐
+> 
+UITextAlignmentCenter   中对齐
+
+- #####contentVerticalAlignment————内容垂直对齐方式
+```
+    textfield.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+```
+>     UIControlContentVerticalAlignmentTop   对齐顶端
+    UIControlContentVerticalAlignmentBottom   对齐底部
+    UIControlContentVerticalAlignmentFill   充满
+
+- ##### contentHorizontalAlignment————内容水平对齐方式
+```
+    textfield.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+```
+>     UIControlContentHorizontalAlignmentLeft   对齐左边
+    UIControlContentHorizontalAlignmentCenter   对齐中间
+    UIControlContentHorizontalAlignmentRight   对齐右边
+    UIControlContentHorizontalAlignmentFill   充满
+
+- ##### adjustsFontSizeToFitWidth————自动收缩字体适应文本窗口
+```
+    textfield.adjustsFontSizeToFitWidth = YES;
+    textfield.minimumFontSize = 20;   //最小缩小字体
+```
