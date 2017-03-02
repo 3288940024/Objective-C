@@ -88,8 +88,10 @@ label.lineBreakMode = NSLineBreakByCharWrapping; //以字符为显示单位，�
 > 
 **NSLineBreakByTruncatingHead**   前面部分文字……方式省略，显示尾部文字内容
 > **NSLineBreakByTruncatingMiddle**   中间的内容以……方式省略，显示头尾的文字内容
-> **NSLineBreakByTruncatingTail**   结尾部分的内容以……方式省略，显示头的文字内容
-> **NSLineBreakByWordWrapping**   以单词为显示单位，后面部分省略不显示
+> 
+**NSLineBreakByTruncatingTail**   结尾部分的内容以……方式省略，显示头的文字内容
+> 
+**NSLineBreakByWordWrapping**   以单词为显示单位，后面部分省略不显示
 
 - ##### adjustsFontSizeToFitWidth————设置字体大小适应label宽度
 ```
@@ -123,6 +125,7 @@ label.lineBreakMode = NSLineBreakByCharWrapping; //以字符为显示单位，�
     NSDictionary *dict = @{NSFontAttributeName:[UIFont systemFontOfSize:50],NSForegroundColorAttributeName:[UIColor redColor],NSStrokeWidthAttributeName:@3,NSStrokeColorAttributeName:[UIColor greenColor]};
 ```
 > **NSFontAttributeName** 文本字体大小
+> 
 **NSForegroundColorAttributeName** 文本里面字体颜色 ***@3*** 空心, ***@-3*** 实心
 > 
 **NSStrokeColorAttributeName** 文本外缘字体颜色 

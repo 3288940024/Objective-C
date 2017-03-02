@@ -53,20 +53,30 @@
 
 - #####contentMode————填充方式
 >     UIViewContentModeScaleToFill   全部填充
-    UIViewContentModeScaleAspectFit   按比例填充
-    UIViewContentModeScaleAspectFill   按比例填充,自动对周围裁剪
+ >
+   UIViewContentModeScaleAspectFit   按比例填充
+ >
+   UIViewContentModeScaleAspectFill   按比例填充,自动对周围裁剪
 > 
 UIViewContentModeRedraw   范围变化重绘(调用setneedsdisplay)    
 > 
-UIViewContentModeCenter   按中心填充
-    UIViewContentModeTop   按顶部填充
-    UIViewContentModeBottom   按底部填充
-    UIViewContentModeLeft   按左边填充
-> UIViewContentModeRight   按右边填充    
-> UIViewContentModeTopLeft   按左上方填充
-    UIViewContentModeTopRight   按右上方填充
-    UIViewContentModeBottomLeft   按左下方填充
-    UIViewContentModeBottomRight   按右下方填充
+UIViewContentModeCenter   按中心填充    
+> 
+UIViewContentModeTop   按顶部填充
+ > 
+   UIViewContentModeBottom   按底部填充
+ > 
+   UIViewContentModeLeft   按左边填充
+> 
+UIViewContentModeRight   按右边填充    
+> 
+UIViewContentModeTopLeft   按左上方填充
+ > 
+   UIViewContentModeTopRight   按右上方填充
+ > 
+   UIViewContentModeBottomLeft   按左下方填充
+  > 
+  UIViewContentModeBottomRight   按右下方填充
 
 - #####透明度 
 ```

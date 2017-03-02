@@ -47,9 +47,12 @@ UITextBorderStyleBezel
     text.rightViewMode = UITextFieldViewModeAlways;
 ```
 >     **UITextFieldViewModeNever**   从不出现
+>
     **UITextFieldViewModeWhileEditing**   编辑时出现
+>
     **UITextFieldViewModeUnlessEditing**   除了编辑外都出现
-    **UITextFieldViewModeAlways**   一直出现
+ >
+   **UITextFieldViewModeAlways**   一直出现
 
   - **最右侧加图片:<左侧类似>**
 ```
@@ -72,6 +75,7 @@ UITextBorderStyleBezel
     textfield.autocorrectionType = UITextAutocorrectionTypeDefault;
 ```
 >     UITextAutocorrectionTypeNo    不自动纠错
+>
     UITextAutocorrectionTypeYes   自动纠错
 
 - #####clearsOnBeginEditing————编辑清空
@@ -92,7 +96,9 @@ UITextAlignmentCenter   中对齐
     textfield.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 ```
 >     UIControlContentVerticalAlignmentTop   对齐顶端
+>
     UIControlContentVerticalAlignmentBottom   对齐底部
+>
     UIControlContentVerticalAlignmentFill   充满
 
 - ##### contentHorizontalAlignment————内容水平对齐方式
@@ -100,12 +106,25 @@ UITextAlignmentCenter   中对齐
     textfield.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
 ```
 >     UIControlContentHorizontalAlignmentLeft   对齐左边
-    UIControlContentHorizontalAlignmentCenter   对齐中间
-    UIControlContentHorizontalAlignmentRight   对齐右边
-    UIControlContentHorizontalAlignmentFill   充满
+ >
+   UIControlContentHorizontalAlignmentCenter   对齐中间
+  >
+  UIControlContentHorizontalAlignmentRight   对齐右边
+ >
+   UIControlContentHorizontalAlignmentFill   充满
 
 - ##### adjustsFontSizeToFitWidth————自动收缩字体适应文本窗口
 ```
     textfield.adjustsFontSizeToFitWidth = YES;
     textfield.minimumFontSize = 20;   //最小缩小字体
 ```
+
+- ##### autocapitalizationType————首字母是否大写
+```
+    textfield.autocapitalizationType = UITextAutocapitalizationTypeNone;   //不自动大写
+```
+>     UITextAutocapitalizationTypeWords   单词首字母大写
+>
+    UITextAutocapitalizationTypeSentences   句子的首字母大写
+> 
+   UITextAutocapitalizationTypeAllCharacters   所有字母都大写
