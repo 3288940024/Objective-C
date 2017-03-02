@@ -12,7 +12,7 @@
     * [UISwitch](uiswitch.md)
     * [UISegmentedControl](uisegmentedcontrol.md)
     * [UIToolbar](uitoolbar.md)
-    * UITextView
+    * [UITextView](uitextview.md)
     * UISearchBar
     * UIScrollView
     * UIPageControl
