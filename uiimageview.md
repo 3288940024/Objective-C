@@ -67,3 +67,26 @@ UIViewContentModeCenter   按中心填充
     UIViewContentModeBottomLeft   按左下方填充
     UIViewContentModeBottomRight   按右下方填充
 
+- #####透明度 
+```
+    imageView.alpha = 0.5;
+    imageView.hidden = YES;
+    imageView.highlightedImage = (UIImage *)hightlighedImage;   //设置高亮时显示的图片
+```
+
+### 扩展
+- #####播放一系列图片
+```
+    NSArray *array = @[@""];   //创建一个数组存储图片
+    imageView.animationImages = array;   //轮流播放数组内图片
+    imageView.animationDuration = [array count];   //设置播放完用时
+    imageView.animationRepeatCount = 0;   //设置播放次数
+    [imageView startAnimating];   //开始播放
+```
+
+- #####    为图片添加单击事件——————一定先将userInteractionEnabled设置为YES，这样才能响应
+```
+    imageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(click:)];
+    [imageView addGestureRecognizer:singleTap];
+```
