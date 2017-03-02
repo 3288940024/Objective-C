@@ -1,4 +1,5 @@
 # UIImageView,UIImage 图片
+***
 ### 属性
 - #####创建
 ```
@@ -74,6 +75,7 @@ UIViewContentModeCenter   按中心填充
     imageView.highlightedImage = (UIImage *)hightlighedImage;   //设置高亮时显示的图片
 ```
 
+***
 ### 扩展
 - #####播放一系列图片
 ```

@@ -1,6 +1,7 @@
 ###UILabel 标签
 >UILable是iPhone界面最基本的控件，主要用来显示文本信息。
 
+***
 ###属性
 - ##### 创建
 
@@ -95,6 +96,7 @@ label.lineBreakMode = NSLineBreakByCharWrapping; //以字符为显示单位，�
     label.adjustsFontSizeToFitWidth = YES;
 ```
 
+***
 ### 扩展
 - ##### \n————换行符
 ```

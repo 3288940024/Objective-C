@@ -1,4 +1,5 @@
 # UIButton 按钮
+***
 ### 属性
 - #####创建
 ```
@@ -31,6 +32,7 @@
     **UIControlStateApplication** = 0x00FF0000;   当应用程序标志时
     **UIControlStateReserved** = 0xFF00000;   为内部框架预留
 
+***
 ### 方法
  - **设置button标题和标题颜色**
 ```
@@ -90,12 +92,12 @@
     button.contentEdgeInsets = insets;
     button.titleEdgeInsets = insets;   //标题间距
 ```
-
+
 - #####给button设置标签，用来辨别点击的是哪个button，常用在委托方法中
 ```
     button.tag = 0;
 ```
-
+
 - #####设置圆角
 ```
     [button.layer setMasksTobounds:YES];   边缘是否剪切

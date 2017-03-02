@@ -1,5 +1,5 @@
 #UIColor 颜色
-
+***
 ### 适用于
   - **textColor** 文本颜色
   - **backgroundColor** 背景颜色 
@@ -7,7 +7,7 @@
   - **barTinColor** 设置NavigationBar和NavigationItem的颜色
   - **TinColor** navigationItem里面的字体颜色
   - **borderColor** 边框颜色
-
+***
 ### 系统颜色
   - **blackColor** 黑色   0.0 white
   - **darkGrayColor** 深灰色   0.333 white
@@ -15,7 +15,7 @@
   - **whiteColor** 白色   1.0 white
   - **grayColor** 灰色   0.5 white
   - **clearColor** 透明   0.0 white 0.0 alpha
-
+***
 ### 随机颜色
 ```
     CGFloat r = arc4random()%256/255.0;
@@ -23,7 +23,7 @@
     CGFloat b = arc4random()%256/255.0;
     UIColor *color = [UIColor colorWithRed:r green:g blue:b alpha:1];
 ```
-
+***
 ### 快速创建方法
 ```
     [UIColor colorWithWhite:CGFloat alpha:CGFloat];
