@@ -63,3 +63,53 @@ NSTextAlignmentRight   居右
 ```
     label.enabled = NO;
 ```
+
+- #####highlighted———— 是否高亮显示
+label.highlighted = YES；label.highlighted.TextColor = [UIColor orangeColor]；   设置高亮时文本颜色
+
+- #####baselineAdjustment————控制文本基线的行为
+> 如果**adjustsFontSizeToFitWidth**属性设置为YES;
+**UIBaselineAdjustmentNone**   文本最低端与label中线对齐
+**UIBaselineAdjustmentAlignCenters**   文本中线与label中线对齐
+> 
+**UIBaselineAdjustmentAlignBaselines** = 0   默认,文本最上端与中线对齐
+
+- ##### adjustsLetterSpacingToFitWidth————改变字母之间的间距来适应Label 大小
+```
+    label.adjustsLetterSpacingToFitWidth = NO;
+```
+
+- #####lineBreakMode————设置文字过长的显示格式
+```
+label.lineBreakMode = NSLineBreakByCharWrapping; //以字符为显示单位，后面部分省略不显示
+```
+> 
+**NSLineBreakByClipping**   剪切与文本宽度相同的内容长度，后部分被删除
+> 
+**NSLineBreakByTruncatingHead**   前面部分文字……方式省略，显示尾部文字内容
+> **NSLineBreakByTruncatingMiddle**   中间的内容以……方式省略，显示头尾的文字内容
+> **NSLineBreakByTruncatingTail**   结尾部分的内容以……方式省略，显示头的文字内容
+> **NSLineBreakByWordWrapping**   以单词为显示单位，后面部分省略不显示
+
+- ##### adjustsFontSizeToFitWidth————设置字体大小适应label宽度
+```
+    label.adjustsFontSizeToFitWidth = YES;
+```
+
+- ##### \n————换行符
+```
+    label.text = @"请\n竖\n直\n方\n向\n排\n列";
+    label.numberOfLines = [label.text length];
+```
+
+- #####添加边框
+```
+    label.layer.borderWidth = 1; //设置边框宽度(默认黑色)
+    label.layer.borderColor = [[UIColor redColor] CGColor]; //自定义边框颜色
+    //改变边框颜色：
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB(); //设置颜色空间
+    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){0,0,0,1}); //设置自定义颜色
+    label.layer.borderColor = colorref;
+```
+
+18.字体样式；label.attributedText = [[NSAttributedString alloc]initWithString:@”123” attributes:dict]；   设置文本内容并加入自定义字体字典a.空心字体，实心字体NSDictionary *dict = @{NSFontAttributeName:[UIFont systemFontOfSize:50],NSForegroundColorAttributeName:[UIColor redColor],NSStrokeWidthAttributeName:@3,NSStrokeColorAttributeName:[UIColor greenColor]}；｛NSFontAttributeName   文本字体大小；NSForegroundColorAttributeName   文本里面字体颜色@3空心@-3实心；NSStrokeColorAttributeName  文本外缘字体颜色｝；b. NSStrikethroughStyleAttributeName删除线NSDictionary *dict = @{NSStrikethroughStyleAttributeName:[NSNumber numberWithInteger:NSUnderlineStyleSingle]}；[NSNumber numberWithInteger:NSUnderlineStyleSingle] = @(NSUnderlineStyleSingle)；NSStrikethroughColorAttributeName   删除线颜色c. NSUnderlinetyleAttributeName下划线NSDictionary *dict = @{NSUnderlinetyleAttributeName:[NSNumber numberWithInteger:NSUnderlineStyleSingle]}；NSUnderlineColorAttributeName   下划线颜色d.NSShadowAttributeName 阴影e.NSVerticalGlyphFormAttributeName 横屏排版 @(0)该属性所对应的值是一个NSNumber对象（整数）。0表示横排文本。1表示竖排文本。在IOS中，总是使用横排文本，0以外的值都未定义f.NSObliquenessAttributeName 设置字体倾斜 @1,g.NSExpansionAttributeName 设置文本扁平化 @1,19.CAGradientLayer————渐变字体；CAGradientLayer *gradientlayer = [CAGradientLayer layer]；   创建渐变层｛gradientlayer.startPoint = CGPointMake(0,0.5)；gradientlayer.endPoint = CGPointMake(1,0.5);   横屏｝gradientLayer.frame = label.frame；gradientLayer.colors = @[(id)[self randomColor].CGColor,(id)[self randomColor].CGColor,(id)[self randomColor].CGColor]；   设置渐变层的颜色，随机颜色渐变gradientLayer.mask = label.layer；   mask层工作原理：按照透明度裁剪，只保留非透明部分，文字就是非透明的，因此除了文字，其他都被裁剪掉，这样就只会显示文字下面渐变层的内容，相当于留了文字的区域，让渐变层去填充文字的颜色label.frame = gradientLayer.bounds；20.计算UILabel随字体多行后的高度；CGRect bounds = CGRectMake(0,0,200,300)；heightLabel = [label textTextForBounds:bounds limitedToNumberOfLines:20]；   计算20行后Label的FrameNSLog(@%f,heightLabel.size.height)；21.根据内容多少改变label的高度；NSDictionary *attribute = @{NSFontAttributeName:[UIFont systemFontOfSize:20]}；CGSize size = [label.text boundingRectWithSize:CGSizeMake(200,100) options:(NSStringDrawingUsesFontLeading | NSStringDrawingTruncateslastVisibleLine | NSStringDrawingUsesLineFragmentOrigin)attributes:attribute context:nil].size；
