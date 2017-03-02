@@ -77,3 +77,29 @@
 **UIControlEventAllEditingEvents**   通知所有关于文本编辑的事件
 > 
 **UIControlEventAllEvents**   通知所有事件
+
+- #####定义按钮标题字体格式
+```
+    [button.titleLabell setFont:[UIFont systemFontOfSize:20]];
+```
+
+- #####设置按钮内部图片间距和标题间距
+```
+    UIEdgeInsets insets;
+    insets.top = insets.bottom = insets.right = insets.left = 10;
+    button.contentEdgeInsets = insets;
+    button.titleEdgeInsets = insets;   //标题间距
+```
+
+- #####给button设置标签，用来辨别点击的是哪个button，常用在委托方法中
+```
+    button.tag = 0;
+```
+
+- #####设置圆角
+```
+    [button.layer setMasksTobounds:YES];   边缘是否剪切
+    [button.layer setCornerRadius:10];   圆角
+    [button.layer setBorderWidth:10];   边框宽度
+    [button.layer setbBorderColor:[[UIColor redColor]CGColor]];   边框颜色
+```
