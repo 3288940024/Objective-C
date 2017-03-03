@@ -32,3 +32,5 @@
     progressView.progress = 0.7;   //普通赋值
     [progressView setProgress:0.7 animated:YES];   //赋值并有动画效果
 ```
+
+### 仅供参考,错误勿怪！

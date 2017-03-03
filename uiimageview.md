@@ -102,3 +102,5 @@ UIViewContentModeTopLeft   按左上方填充
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(click:)];
     [imageView addGestureRecognizer:singleTap];
 ```
+
+### 仅供参考,错误勿怪！

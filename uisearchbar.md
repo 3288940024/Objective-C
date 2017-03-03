@@ -160,3 +160,5 @@ UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 50, 10
 ```
 -(void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScopeNS_AVAILABLE_IOS(3_0);
 ```
+
+### 仅供参考,错误勿怪！

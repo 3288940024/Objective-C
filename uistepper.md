@@ -63,3 +63,5 @@ UIStepper * step = [[UIStepper alloc]initWithFrame:CGRectMake(100, 100, 100, 100
 -(void)setDecrementImage:(UIImage *)image forState:(UIControlState)state;
 -(UIImage *)decrementImageForState:(UIControlState)state;
 ```
+
+### 仅供参考,错误勿怪！

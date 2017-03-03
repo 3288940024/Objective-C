@@ -138,3 +138,5 @@
    NSLog(@"scrollViewDidEndDecelerating"); 
 }
 ```
+
+### 仅供参考,错误勿怪！

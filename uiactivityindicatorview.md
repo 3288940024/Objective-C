@@ -42,3 +42,5 @@
 ```
     [activity setCenter:CGPointMake(160, 140)];//指定进度轮中心点
 ```
+
+### 仅供参考,错误勿怪！

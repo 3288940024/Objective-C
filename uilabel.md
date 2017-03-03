@@ -176,3 +176,5 @@ label.lineBreakMode = NSLineBreakByCharWrapping; //以字符为显示单位，�
     NSDictionary *attribute = @{NSFontAttributeName:[UIFont systemFontOfSize:20]};
     CGSize size = [label.text boundingRectWithSize:CGSizeMake(200,100) options:(NSStringDrawingUsesFontLeading | NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin)attributes:attribute context:nil].size;
 ```
+
+### 仅供参考,错误勿怪！

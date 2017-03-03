@@ -20,6 +20,7 @@
     * [UIActivityIndicatorView](uiactivityindicatorview.md)
     * [UITableView](uitableview.md)
     * [UICollectionView](uicollectionview.md)
+    * [UIAlertController](uialertcontroller.md)
 * [UI拓展](ui拓展.md)
     * [UIColor](uicolor.md)
     * [KeyBoard](keyboard.md)

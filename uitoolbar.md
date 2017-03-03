@@ -12,3 +12,6 @@
     NSArray *items = [NSArray arrayWithObjects:addItem,nil];   //把Items放进数组
     [self setToolbarItems:items];  //向UIToolBar添加UIBarButtonItem
 ```
+
+
+### 仅供参考,错误勿怪！

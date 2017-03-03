@@ -1,4 +1,5 @@
 # UITableView 表视图
+> 继承**UIScrollView**
 ***
 ### 属性
 - ##### 创建
@@ -200,3 +201,5 @@
 ```
 -(BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath; 
 ``` 
+
+### 仅供参考,错误勿怪！

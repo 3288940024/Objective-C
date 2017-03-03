@@ -49,3 +49,5 @@ UISlider *slider = [[UISlider alloc]initWithFrame:CGRectMake(0,400,320,200)];
     [slider setThumbImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];   //设置滑轮样子图片,设置普通状态和高亮状态的滑轮样式
     slider.thumbTintColor = [UIColor redColor];   //设置滑轮的颜色如果设置后图片将不会显示
 ```
+
+### 仅供参考,错误勿怪！

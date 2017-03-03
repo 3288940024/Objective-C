@@ -71,4 +71,7 @@ text.keyboardType = UIKeyboardTypeDefault;
     {[self.view endEditing:YES];}
 ```
 
-- ##### button方法内回收键盘
+- ##### button方法内回收键盘
+
+
+### 仅供参考,错误勿怪！

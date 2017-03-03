@@ -35,3 +35,5 @@ UISwitch *switchView = [[UISwitch alloc]initWithFrame:CGRectMake(54.0f,16.0f,100
     switchView.onTintColor = [UIColor colorWithRed:0.984 green:0.478 blue:0.224 alpha:1.000];
     switchView.onTintColor = [UIColor colorWithRed:99/255.f green:155/255.f blue:0 alpha:1.0];
 ```
+
+### 仅供参考,错误勿怪！
