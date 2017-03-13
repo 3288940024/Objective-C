@@ -125,9 +125,9 @@
 }
 ```
 
-- ###### 开始减速时调用（以下两个方法注意与以上两个方法加以区别）
+- ##### 开始减速时调用（以下两个方法注意与以上两个方法加以区别）
 ```
-- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
+-(void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
     NSLog(@"scrollViewWillBeginDecelerating");
 }
 ```
